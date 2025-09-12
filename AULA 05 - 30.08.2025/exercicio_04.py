@@ -2,7 +2,7 @@
 # Faça um algoritmo que leia uma string no formato de data (dd/mm/aaaa)
 # e escreva esta com o nome do mês por extenso.
 
-def converter_data():
+def converter_data(): # Função que converte a data
     # Dicionário com os nomes dos meses
     meses = {
         '01': 'janeiro', '02': 'fevereiro', '03': 'março',
@@ -15,7 +15,7 @@ def converter_data():
     data = input("Digite uma data (dd/mm/aaaa): ")
     
     # Separa os componentes da data
-    dia, mes, ano = data.split('/')
+    dia, mes, ano = data.split('/') # split() divide a string em partes, usando '/' como separador
     
     # Obtém o nome do mês
     nome_mes = meses[mes]
@@ -24,4 +24,8 @@ def converter_data():
     print(f"{dia} de {nome_mes} de {ano}")
 
 # Executa o programa
-converter_data()
+converter_data() # explica o que está acontecendo aqui
+# A função converter_data() é chamada para iniciar o processo de conversão da data.
+# Quando chamamos a função, o código dentro dela é executado, permitindo que o usuário insira uma data e veja o resultado formatado.
+# Isso é necessário porque definir a função apenas cria o bloco de código, mas não o executa.
+# Sem essa chamada, nada aconteceria quando o script fosse executado.
